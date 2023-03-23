@@ -94,181 +94,232 @@ class _VideoscreenState extends State<Videoscreen> {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    "${homeprovider.videoNameList1[i]}",
-                    style: GoogleFonts.poppins(
-                        color: Colors.black,
-                        fontWeight: FontWeight.w500,
-                        fontSize: 18,
-                        letterSpacing: 1),
-                  ),
-                  Text(
-                    "${homeprovider.videoNameList2[i]}",
-                    style: GoogleFonts.poppins(
-                        color: Colors.black,
-                        fontWeight: FontWeight.w500,
-                        fontSize: 18,
-                        letterSpacing: 1),
-                  ),
-                  SizedBox(
-                    height: 2,
-                  ),
-                  Text(
-                    "${homeprovider.videoViewList[i]} . ${homeprovider.videoTimingList[i]}",
-                    style: TextStyle(color: Colors.black38, fontSize: 12),
-                  ),
-                  SizedBox(
-                    height: 5,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        CircleAvatar(
-                          radius: 18,
-                          backgroundImage:
-                              AssetImage("${homeprovider.channelLogoList[i]}"),
-                        ),
-                        SizedBox(
-                          width: 5,
-                        ),
-                        Container(
-                          child: Text(
-                            "${homeprovider.channelNameList[i]}",
-                            style: GoogleFonts.poppins(
-                              color: Colors.black,
-                              fontWeight: FontWeight.w600,
+              child: Container(
+                height: 492,
+                child: ListView(
+                  shrinkWrap: true,
+                  scrollDirection: Axis.vertical,
+                  children: [
+                    Text(
+                      "${homeprovider.videoNameList1[i]}",
+                      style: GoogleFonts.poppins(
+                          color: Colors.black,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 18,
+                          letterSpacing: 1),
+                    ),
+                    Text(
+                      "${homeprovider.videoNameList2[i]}",
+                      style: GoogleFonts.poppins(
+                          color: Colors.black,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 18,
+                          letterSpacing: 1),
+                    ),
+                    SizedBox(
+                      height: 2,
+                    ),
+                    Text(
+                      "${homeprovider.videoViewList[i]} . ${homeprovider.videoTimingList[i]}",
+                      style: TextStyle(color: Colors.black38, fontSize: 12),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          CircleAvatar(
+                            radius: 18,
+                            backgroundImage:
+                                AssetImage("${homeprovider.channelLogoList[i]}"),
+                          ),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Container(
+                            child: Text(
+                              "${homeprovider.channelNameList[i]}",
+                              style: GoogleFonts.poppins(
+                                color: Colors.black,
+                                fontWeight: FontWeight.w600,
+                              ),
                             ),
                           ),
-                        ),
-                        Spacer(),
-                        Container(
-                          height: 35,
-                          width: 90,
-                          decoration: BoxDecoration(
-                            color: Colors.black,
-                            borderRadius: BorderRadius.circular(20),
+                          Spacer(),
+                          Container(
+                            height: 35,
+                            width: 90,
+                            decoration: BoxDecoration(
+                              color: Colors.black,
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            alignment: Alignment.center,
+                            child: Text("Subscribe",style: GoogleFonts.poppins(color: Colors.white,fontSize: 13)),
                           ),
-                          alignment: Alignment.center,
-                          child: Text("Subscribe",style: GoogleFonts.poppins(color: Colors.white)),
-                        ),
-                        SizedBox(width: 5,),
+                          SizedBox(width: 5,),
+                          Container(
+                            height: 35,
+                            width: 50,
+                            decoration: BoxDecoration(
+                              color: Colors.grey.shade200,
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            alignment: Alignment.center,
+                            child: Icon(Icons.notification_add_outlined,color: Colors.black,),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
                         Container(
                           height: 35,
-                          width: 50,
+                          width: 130,
                           decoration: BoxDecoration(
                             color: Colors.grey.shade200,
                             borderRadius: BorderRadius.circular(20),
                           ),
                           alignment: Alignment.center,
-                          child: Icon(Icons.notification_add_outlined,color: Colors.black,),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Icon(Icons.thumb_up_alt_rounded,color: Colors.black,),
+                              Text("12M",style: GoogleFonts.poppins(color: Colors.black)),
+                              Icon(Icons.thumb_down_alt_outlined,color: Colors.black,),
+                            ],
+                          ),
                         ),
-                      ],
-                    ),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Container(
-                        height: 35,
-                        width: 130,
-                        decoration: BoxDecoration(
-                          color: Colors.grey.shade200,
-                          borderRadius: BorderRadius.circular(20),
+                        Container(
+                          height: 35,
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.grey.shade200,
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          alignment: Alignment.center,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Icon(Icons.share,color: Colors.black,),
+                              Text("Share",style: GoogleFonts.poppins(color: Colors.black)),
+                            ],
+                          ),
                         ),
-                        alignment: Alignment.center,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            Icon(Icons.thumb_up_alt_outlined,color: Colors.black,),
-                            Text("12M",style: GoogleFonts.poppins(color: Colors.black)),
-                            Icon(Icons.thumb_down_alt_outlined,color: Colors.black,),
-                          ],
+                        Container(
+                          height: 35,
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.grey.shade200,
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          alignment: Alignment.center,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Icon(Icons.electric_bolt_outlined,color: Colors.black,),
+                              Text("Remix",style: GoogleFonts.poppins(color: Colors.black)),
+                            ],
+                          ),
                         ),
-                      ),
-                      Container(
-                        height: 35,
-                        width: 100,
-                        decoration: BoxDecoration(
-                          color: Colors.grey.shade200,
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        alignment: Alignment.center,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            Icon(Icons.share,color: Colors.black,),
-                            Text("Share",style: GoogleFonts.poppins(color: Colors.black)),
-                          ],
-                        ),
-                      ),
-                      Container(
-                        height: 35,
-                        width: 100,
-                        decoration: BoxDecoration(
-                          color: Colors.grey.shade200,
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        alignment: Alignment.center,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            Icon(Icons.electric_bolt_outlined,color: Colors.black,),
-                            Text("Remix",style: GoogleFonts.poppins(color: Colors.black)),
-                          ],
-                        ),
-                      ),
 
-                    ],
-                  ),
-                  SizedBox(height: 20,),
-                  Container(
-                    padding: EdgeInsets.all(10),
-                    height: 120,
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      color: Colors.grey.shade200,
-                      borderRadius: BorderRadius.circular(15),
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text("Comments  46K",style: GoogleFonts.poppins(color: Colors.black),),
-                        SizedBox(height: 10,),
-                        Row(
-                          children: [
-                            CircleAvatar(
-                              radius: 15,
-                              backgroundImage: AssetImage("assets/logo/person.jpg"),
-                            ),
-                            SizedBox(width: 10,),
-                            Container(
-                              height: 30,
-                              width: 280,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(50),
-                                color: Colors.grey.shade300,
-                              ),
-                              padding: EdgeInsets.only(left: 10),
-                              alignment: Alignment.centerLeft,
-                              child: Text("Add a comment . . .",style: GoogleFonts.poppins(color: Colors.grey)),
-                            ),
-                          ],
-                        ),
                       ],
                     ),
-                  ),
-                ],
+                    SizedBox(height: 20,),
+                    Container(
+                      padding: EdgeInsets.all(10),
+                      height: 120,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        color: Colors.grey.shade200,
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Comments  46K",style: GoogleFonts.poppins(color: Colors.black),),
+                          SizedBox(height: 10,),
+                          Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 20,
+                                backgroundImage: AssetImage("assets/logo/person.jpg"),
+                              ),
+                              SizedBox(width: 10,),
+                              Container(
+                                height: 35,
+                                width: 270,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(50),
+                                  color: Colors.grey.shade300,
+                                ),
+                                padding: EdgeInsets.only(left: 10),
+                                alignment: Alignment.centerLeft,
+                                child: Text("Add a comment . . .",style: GoogleFonts.poppins(color: Colors.grey)),
+                                // Text("Add a comment . . .",style: GoogleFonts.poppins(color: Colors.grey)),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 10,),
+                    commentBox(),
+                  ],
+                ),
               ),
             ),
+
           ],
         ),
       ),
     );
   }
+
+  Widget commentBox()
+  {
+    return Container(
+      height: 85,
+      width: double.infinity,
+      padding: EdgeInsets.all(10),
+      decoration: BoxDecoration(
+        color: Colors.grey.shade100,
+        borderRadius: BorderRadius.circular(10)
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          CircleAvatar(
+            radius: 20,
+            backgroundImage: AssetImage("assets/logo/p2.jpg"),
+          ),
+          SizedBox(width: 10,),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("TheAkhilSarkar",style: GoogleFonts.poppins(color: Colors.black,fontWeight: FontWeight.w500)),
+              Text("Nice App Dude ! Keep it Up. . .",style: GoogleFonts.poppins(color: Colors.black,fontSize: 12)),
+              SizedBox(height: 4,),
+              Row(
+                children: [
+                  Icon(Icons.thumb_up_off_alt_rounded,size: 15),
+                  SizedBox(width: 5,),
+                  Icon(Icons.thumb_down_alt_outlined,size: 15),
+                  SizedBox(width: 5,),
+                  Icon(Icons.favorite,size: 15),
+                  SizedBox(width: 10,),
+                  Text("Reply",style: GoogleFonts.poppins(color: Colors.black,fontSize: 9)),
+                ],
+              )
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
 }
