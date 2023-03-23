@@ -33,5 +33,8 @@ class Videoprovider extends ChangeNotifier {
     "assets/video/love.mp4",
     "assets/video/bb.mp4",
     "assets/video/mehr.mp4",
+    "assets/video/prem.mp4",
+    "assets/video/apna.mp4",
+    "assets/video/pathan.mp4",
   ];
 }

@@ -10,6 +10,9 @@ class Homeprovider extends ChangeNotifier
     "assets/video/love.jpg",
     "assets/video/bb.jpg",
     "assets/video/mehr.jpg",
+    "assets/video/prem.jpg",
+    "assets/video/apna.jpg",
+    "assets/video/pathan.jpg",
   ];
 
   List channelLogoList = [
@@ -19,6 +22,9 @@ class Homeprovider extends ChangeNotifier
     "assets/logo/love.png",
     "assets/logo/bb.png",
     "assets/logo/mehr.jpg",
+    "assets/logo/lela.jpg",
+    "assets/logo/lela.jpg",
+    "assets/logo/yrf.jpeg",
   ];
 
   List channelNameList = [
@@ -28,6 +34,9 @@ class Homeprovider extends ChangeNotifier
     "Ellie Goulding",
     "SET India",
     "Sony Music",
+    "Zee Music",
+    "Zee Music",
+    "YRF Music",
   ];
 
   List videoViewList = [
@@ -37,6 +46,9 @@ class Homeprovider extends ChangeNotifier
     "161M views",
     "4.9M views",
     "125M views",
+    "17M views",
+    "165M views",
+    "265M views",
   ];
 
   List videoTimingList = [
@@ -46,6 +58,9 @@ class Homeprovider extends ChangeNotifier
     "3 years ago",
     "4 days ago",
     "2 years ago",
+    "4 years ago",
+    "7 month ago",
+    "5 month ago",
   ];
 
   List videoNameList1 = [
@@ -55,6 +70,9 @@ class Homeprovider extends ChangeNotifier
     "Love Me Like You Do | Elei Goulding",
     "Bhuvan Bam & MC Stan |",
     "O Mehrama | Love Aaj Kal |",
+    "Tum Prem Ho Tum Preet Ho |",
+    "Apna Bana Le | King |",
+    "Jhoome Jo Pathan | Pathan |",
   ];
 
   List videoNameList2 = [
@@ -64,6 +82,9 @@ class Homeprovider extends ChangeNotifier
     "Fifty Shades Of Grey",
     "The Kapil Sharma | SET India " ,
     "Darshan Raval | Kartik | Sara " ,
+    "Radhe Krishna | Star Plus" ,
+    "Varun Dhavan | Kriti S" ,
+    "SRK | Deepika Padukon | YRF" ,
   ];
 
 }
